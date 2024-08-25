@@ -1,0 +1,12 @@
+### GET request to example server
+GET localhost:4000/v1/movies
+
+### Send POST request with json body
+POST localhost:4000/v1/movies
+Content-Type: application/json
+
+{
+  "title": "Moana",
+  "runtime": 107,
+  "genres": ["animation", "scary"]
+}
