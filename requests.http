@@ -29,3 +29,7 @@ Content-Type: application/json
     "adventure"
   ]
 }
+
+### Send DELETE request with json body
+DELETE localhost:4000/v1/movies/3
+Content-Type: application/json
