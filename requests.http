@@ -1,5 +1,5 @@
 ### GET request to example server
-GET localhost:4000/v1/movies
+GET localhost:4000/v1/movies/4
 
 ### Send POST request with json body
 POST localhost:4000/v1/movies
@@ -14,3 +14,22 @@ Content-Type: application/json
     "scary"
   ]
 }
+
+### Send PUT request with json body
+PUT localhost:4000/v1/movies/2
+Content-Type: application/json
+
+{
+  "title": "Black Panther",
+  "year": 2018,
+  "runtime": "134 mins",
+  "genres": [
+    "sci-fi",
+    "action",
+    "adventure"
+  ]
+}
+
+### Send DELETE request with json body
+DELETE localhost:4000/v1/movies/3
+Content-Type: application/json
