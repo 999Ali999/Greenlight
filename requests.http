@@ -33,3 +33,13 @@ Content-Type: application/json
 ### Send DELETE request with json body
 DELETE localhost:4000/v1/movies/3
 Content-Type: application/json
+
+### Send PATCH request with json body
+PATCH localhost:4000/v1/movies/4
+Content-Type: application/json
+
+{
+  "year": 1985,
+  "title": ""
+}
+
