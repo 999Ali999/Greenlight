@@ -8,6 +8,7 @@ import (
 	"github.com/999Ali999/greenlight/internal/jsonlog"
 	"github.com/999Ali999/greenlight/internal/mailer"
 	"os"
+	"sync"
 	"time"
 
 	_ "github.com/lib/pq"
@@ -45,6 +46,7 @@ type application struct {
 	logger *jsonlog.Logger
 	models data.Models
 	mailer mailer.Mailer
+	wg     sync.WaitGroup
 }
 
 func main() {
