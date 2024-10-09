@@ -1,6 +1,6 @@
 # Greenlight
 
-Greenlight is a RESTful API for managing movie information, built with Go. This project is based on the "Let's Go Further" course by Alex Edwards.
+Greenlight is a RESTful API for managing movie information, built with Go.
 
 ## Main Features
 
