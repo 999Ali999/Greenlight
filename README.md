@@ -1,6 +1,4 @@
-# 🟢 Greenlight
-
-### A Project from *Let’s Go Further* by Alex Edwards
+# 🟢 Greenlight | Still on going!
 
 Greenlight is a comprehensive web application project that demonstrates clean and effective Go programming practices. It was designed as part of *Let's Go Further*, a book by Alex Edwards that focuses on building real-world applications using Go.
 
@@ -14,7 +12,7 @@ Greenlight is a learning-driven project aimed at developing a robust and scalabl
 
 - **Backend**: Go (Golang)
 - **Database**: PostgreSQL
-- **Authentication**: Secure password hashing and role-based access control
+- **Authentication**: Secure password hashing and role-based access control with **JWT**
 - **Architecture**: Modular and scalable design using layered architecture
 - **REST API**: Exposing JSON-based endpoints for easy integration
 
