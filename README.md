@@ -1,68 +1,55 @@
-# Greenlight
+# 🟢 Greenlight
 
-Greenlight is a RESTful API for managing movie information, built with Go.
+### A Project from *Let’s Go Further* by Alex Edwards
 
-## Main Features
+Greenlight is a comprehensive web application project that demonstrates clean and effective Go programming practices. It was designed as part of *Let's Go Further*, a book by Alex Edwards that focuses on building real-world applications using Go.
 
-1. **Movie Management**
-   - Create, read, update, and delete movie entries
-   - Filter movies by title, genres, and year
-   - Implement full-text search for movie titles
+---
 
-2. **User Management**
-   - User registration and authentication
-   - JSON Web Token (JWT) based authorization
+## 🚀 Overview
 
-3. **Rate Limiting**
-   - Implement IP-based rate limiting to prevent abuse
+Greenlight is a learning-driven project aimed at developing a robust and scalable web application. This project integrates key concepts like user authentication, role-based access control, and the management of movies data, while adhering to Go's best practices.
 
-4. **Metrics**
-   - Track and expose application metrics
+## 🛠️ Tech Stack
 
-5. **Graceful Shutdown**
-   - Ensure the application shuts down gracefully, completing in-flight requests
+- **Backend**: Go (Golang)
+- **Database**: PostgreSQL
+- **Authentication**: Secure password hashing and role-based access control
+- **Architecture**: Modular and scalable design using layered architecture
+- **REST API**: Exposing JSON-based endpoints for easy integration
 
-6. **CORS Support**
-   - Configure Cross-Origin Resource Sharing (CORS) for frontend integration
+## 🎯 Features
 
-7. **Logging and Error Handling**
-   - Implement structured logging
-   - Centralized error handling
+- **User Authentication**: Secure user registration, login, and session management.
+- **Role-Based Access Control (RBAC)**: Different roles to manage access and permissions.
+- **CRUD Operations**: Perform Create, Read, Update, and Delete operations on movie data.
+- **Validation**: Strong input validation to ensure data integrity.
+- **Secure Practices**: Built-in password hashing, data validation, and secure headers.
 
-8. **Database Integration**
-   - Use PostgreSQL for data persistence
-   - Implement database migrations
+## 📚 Learning Outcomes
 
-9. **Input Validation**
-   - Validate and sanitize user input
+The **Greenlight** project is an excellent opportunity to:
+- Gain hands-on experience with Go’s built-in web development tools.
+- Learn how to handle HTTP requests, manage routing, and work with middleware.
+- Understand how to structure large Go applications for scalability and maintainability.
+- Work with PostgreSQL in Go to manage data persistence.
+- Implement secure and scalable user authentication and authorization systems.
 
-10. **JSON Response Shaping**
-    - Implement pagination for list endpoints
-    - Allow clients to request specific fields in responses
+## 📦 Installation & Setup
 
-## Technologies Used
+1. **Clone the repository**:
 
-- Go (Golang)
-- PostgreSQL
-- JSON Web Tokens (JWT)
-- SMTP for email sending
+   ```bash
+   git clone https://github.com/your-username/greenlight.git
 
-## Getting Started
+2. **Install Go dependencies**:
 
-(Include instructions for setting up and running the project)
+   ```bash
+   go mod tidy
 
-## API Endpoints
+3. **Set up the PostgreSQL database**
 
-(List and briefly describe the main API endpoints)
+4. **Run the application:**
 
-## Configuration
-
-(Explain how to configure the application, environment variables, etc.)
-
-## Contributing
-
-(Add guidelines for contributing to the project)
-
-## License
-
-(Specify the license for your project)
+   ```bash
+   go run ./cmd/api
