@@ -4,13 +4,14 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/999Ali999/greenlight/internal/validator"
-	"github.com/julienschmidt/httprouter"
 	"io"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
+
+	"github.com/999Ali999/greenlight/internal/validator"
+	"github.com/julienschmidt/httprouter"
 )
 
 type envelope map[string]interface{}
@@ -74,7 +75,7 @@ func (app *application) readJSON(w http.ResponseWriter, r *http.Request, dst int
 
 		case strings.HasPrefix(err.Error(), "json: unknown field"):
 			fileName := strings.TrimPrefix(err.Error(), "json: unknown field")
-			return fmt.Errorf("body must not be larger than %d bytes", fileName)
+			return fmt.Errorf("body must not be larger than %s bytes", fileName)
 
 		case errors.As(err, &invalidUnmarshalError):
 			panic(err)
