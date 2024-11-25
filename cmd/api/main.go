@@ -4,12 +4,13 @@ import (
 	"context"
 	"database/sql"
 	"flag"
-	"github.com/999Ali999/greenlight/internal/data"
-	"github.com/999Ali999/greenlight/internal/jsonlog"
-	"github.com/999Ali999/greenlight/internal/mailer"
 	"os"
 	"sync"
 	"time"
+
+	"github.com/999Ali999/greenlight/internal/data"
+	"github.com/999Ali999/greenlight/internal/jsonlog"
+	"github.com/999Ali999/greenlight/internal/mailer"
 
 	_ "github.com/lib/pq"
 )
@@ -67,8 +68,8 @@ func main() {
 
 	flag.StringVar(&cfg.smtp.host, "smtp-host", "sandbox.smtp.mailtrap.io", "SMTP host")
 	flag.IntVar(&cfg.smtp.port, "smtp-port", 25, "SMTP port")
-	flag.StringVar(&cfg.smtp.username, "smtp-username", "7aa03bec46e69f", "SMTP username")
-	flag.StringVar(&cfg.smtp.password, "smtp-password", "3c38f61afdc7a9", "SMTP password")
+	flag.StringVar(&cfg.smtp.username, "smtp-username", "f11261a96bd90d", "SMTP username")
+	flag.StringVar(&cfg.smtp.password, "smtp-password", "e39a6aae92379c", "SMTP password")
 	flag.StringVar(&cfg.smtp.sender, "smtp-sender", "Greenlight <no-reply@greenlight.alexedwards.net>", "SMTP sender")
 
 	flag.Parse()
